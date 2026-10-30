@@ -16,10 +16,7 @@ A native macOS inventory analytics and device lifecycle planning application, bu
 
 | Edition | Version | Status |
 | --- | --- | --- |
-| Inventory Intelligence CE | **1.0.0** | Source release candidate; based on approved Stage 8 Increment 8 |
-| Inventory Intelligence Organization/Enterprise | **7.0.1** | Separate, frozen internal enterprise baseline; not included here |
-
-The Stage 8 Increment 8 Community baseline remains unchanged. The 1.0.0 release candidate adds release packaging, application naming, menu commands, documentation, and icon assets. Native macOS compilation of this candidate has not yet been independently confirmed.
+| Inventory Intelligence CE | **1.0.0** | Source release candidate|
 
 ## Take a look
 
