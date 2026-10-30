@@ -27,7 +27,6 @@ Inventory Intelligence CE uses a native macOS sidebar, consistent cards, status 
 
 **Screenshot gallery:** Add six PNG screenshots to [`Docs/Assets/Screenshots/`](Docs/Assets/Screenshots/README.md) using the filenames below. Once uploaded, remove the HTML comment markers surrounding the gallery to display the images in two columns. This prevents broken image links before screenshots are available.
 
- SCREENSHOT GALLERY — remove this opening comment and the closing comment below once all six PNGs exist.
 | Dashboard | Serial Lookup |
 | :---: | :---: |
 | ![Dashboard](Docs/Assets/Screenshots/01-dashboard.png) | ![Serial Lookup](Docs/Assets/Screenshots/02-serial-lookup.png) |
@@ -39,7 +38,6 @@ Inventory Intelligence CE uses a native macOS sidebar, consistent cards, status 
 | Replacement Planning | Device Intelligence & Budget |
 | :---: | :---: |
 | ![Replacement Planning](Docs/Assets/Screenshots/05-replacement-planning.png) | ![Device Intelligence & Budget](Docs/Assets/Screenshots/06-device-intelligence-budget.png) |
-END SCREENSHOT GALLERY
 
 ## What it does
 
