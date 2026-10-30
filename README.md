@@ -1,18 +1,104 @@
-# Application screenshots
+![Inventory Intelligence CE banner](Assets/github-banner.png)
 
-Place six screenshots of **Inventory Intelligence CE 1.0.0 RC1** in this folder. Use PNG format and the exact filenames below:
+# Inventory Intelligence CE
 
-| View | Filename |
-| --- | --- |
-| Dashboard | `01-dashboard.png` |
-| Serial Lookup | `02-serial-lookup.png` |
-| Inventory Reports | `03-inventory-reports.png` |
-| Lifecycle Analytics | `04-lifecycle-analytics.png` |
-| Replacement Planning | `05-replacement-planning.png` |
-| Device Intelligence & Budget | `06-device-intelligence-budget.png` |
+**Understand your inventory. Plan what's next.**
 
-Capture screenshots using **synthetic inventory**, with no actual device serial numbers or employee information. Prefer matching window sizes and the same macOS appearance.
+A native macOS inventory analytics and device lifecycle planning application, built with SwiftUI.
 
-**When all six screenshots are added:** in the repository's root `README.md`, remove the `<!--` and `-->` comment delimiters around the two-column screenshot gallery under **Take a look**. GitHub will then display the images.
+![macOS 14+](https://img.shields.io/badge/macOS-14%2B-202c3a) ![Apple Silicon](https://img.shields.io/badge/Apple%20Silicon-arm64-202c3a) ![SwiftUI](https://img.shields.io/badge/SwiftUI-native-0a9b80) ![Version](https://img.shields.io/badge/version-1.0.0-0a9b80)
 
-The screenshots are not included in this source package because no complete six-view screenshot set was supplied.
+<img src="Assets/app-icon-512.png" alt="Inventory Intelligence CE application icon" width="112">
+
+> **Community Edition vs. Organization Edition:** Inventory Intelligence CE is a **local CSV-based** application. **It does not connect to Apple Business Manager (ABM), Jamf Pro, Microsoft Intune, or any other MDM platform.** Direct ABM and Jamf inventory integration has been implemented and used successfully in the separate **Inventory Intelligence Organization/Enterprise Edition**. That capability is **not included in CE**, and this is not a claim that CE itself has been tested with those services.
+
+## Releases and development
+
+| Edition | Version | Status |
+| --- | --- | --- |
+| Inventory Intelligence CE | **1.0.0** | Source release candidate; based on approved Stage 8 Increment 8 |
+| Inventory Intelligence Organization/Enterprise | **7.0.1** | Separate, frozen internal enterprise baseline; not included here |
+
+The Stage 8 Increment 8 Community baseline remains unchanged. The 1.0.0 release candidate adds release packaging, application naming, menu commands, documentation, and icon assets. Native macOS compilation of this candidate has not yet been independently confirmed.
+
+## Take a look
+
+Inventory Intelligence CE uses a native macOS sidebar, consistent cards, status badges, searchable tables, and lifecycle planning views.
+
+**Screenshot gallery:** Add six PNG screenshots to [`Screenshots/`](Screenshots/README.md) using the filenames below. Once uploaded, remove the HTML comment markers surrounding the gallery to display the images in two columns. This prevents broken image links before screenshots are available.
+
+<!-- SCREENSHOT GALLERY — remove this opening comment and the closing comment below once all six PNGs exist.
+| Dashboard | Serial Lookup |
+| :---: | :---: |
+| ![Dashboard](Screenshots/01-dashboard.png) | ![Serial Lookup](Screenshots/02-serial-lookup.png) |
+
+| Inventory Reports | Lifecycle Analytics |
+| :---: | :---: |
+| ![Inventory Reports](Screenshots/03-inventory-reports.png) | ![Lifecycle Analytics](Screenshots/04-lifecycle-analytics.png) |
+
+| Replacement Planning | Device Intelligence & Budget |
+| :---: | :---: |
+| ![Replacement Planning](Screenshots/05-replacement-planning.png) | ![Device Intelligence & Budget](Screenshots/06-device-intelligence-budget.png) |
+END SCREENSHOT GALLERY -->
+
+## What it does
+
+- **Dashboard** — See fleet totals, lifecycle health, unknown dates, and upcoming replacement needs.
+- **Serial Lookup** — Find a device from its imported serial number and inspect its details.
+- **Inventory Reports** — Search, filter, paginate, and export inventory records.
+- **Lifecycle Analytics** — Analyze age, device models, data completeness, and upcoming replacement windows.
+- **Replacement Planning** — Prioritize overdue devices and build replacement-review queues.
+- **Device Intelligence & Budget** — Configure model-based lifecycle and cost policies, then forecast replacement spending over 6, 12, 18, and 24 months.
+- **Native menus and Help** — Use **File → Import Inventory CSV…**, **File → Export**, and **Help → Inventory Intelligence Help**.
+
+## Get started
+
+**Requirements:** Apple Silicon Mac, macOS 14+, and Xcode Command Line Tools with the macOS SDK.
+
+1. Download or clone this source repository.
+2. From the repository directory, build the application:
+
+   ```bash
+   zsh scripts/build_on_mac.zsh
+   ```
+3. Open the resulting application:
+
+   ```bash
+   open "dist/Inventory Intelligence CE.app"
+   ```
+4. Select **File → Import Inventory CSV…** and choose a CSV file.
+
+The local build is **unsigned and not notarized**. The application icon is generated from `Assets/AppIcon.iconset` during the macOS build.
+
+### CSV data
+
+At minimum, provide `Serial` and `Model`. Recommended fields include `Assigned User` and `Date Added` (`YYYY-MM-DD`). See the [Help guide](Docs/HELP.md) for details.
+
+Synthetic samples are included (`sample_inventory_1000.csv`, `sample_inventory_5000.csv`, `sample_inventory_10000.csv`). A 5,000-device dataset was used for visual and numerical review; the 10,000-device performance benchmark and final export reconciliation remain unconfirmed.
+
+## Make it yours
+
+The application display name is **Inventory Intelligence CE**. The app icon is the same artwork used by the separate Enterprise 7.0.1 package, supplied here as an iconset and 512px preview. The source release does not contain Enterprise integration code, credentials, or a live ABM/MDM connector.
+
+## Privacy and data handling
+
+CE analyzes **CSV files you choose locally**. It does not authenticate to ABM or an MDM and does not synchronize inventory from those platforms. Imported CSV files may contain personal or device-identifying information; review files before sharing them, and use synthetic data for public examples.
+
+## Help and contributing
+
+- [User guide](Docs/HELP.md)
+- [Release notes](Docs/RELEASE_NOTES.md)
+- [Contributing](CONTRIBUTING.md)
+- [Publication notice](Docs/PUBLICATION_NOTICE.md)
+
+## License and publication
+
+**No open-source license is granted with this source release candidate.** The rights to redistribute code and artwork, including the Enterprise icon, have not been established. See the [publication notice](Docs/PUBLICATION_NOTICE.md). Do not represent this package as MIT-licensed or publish it publicly without appropriate permission.
+
+Inventory Intelligence CE is not endorsed by Apple, Jamf, Microsoft, or other vendors.
+
+## README in the app
+
+Choose **Help → View README in Web Browser**. By default, this opens the bundled browser-friendly README. To direct the command to the live GitHub README, build with `REPOSITORY_README_URL="https://github.com/OWNER/REPO#readme" zsh scripts/build_on_mac.zsh`, replacing OWNER/REPO with your actual repository.
+
+The build generates the icon from the approved Revision 9 iconset and requires successful `iconutil` output. If an old icon persists, remove the previous app bundle and rebuild.
