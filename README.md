@@ -8,8 +8,6 @@ A native macOS inventory analytics and device lifecycle planning application, bu
 
 ![macOS 14+](https://img.shields.io/badge/macOS-14%2B-202c3a) ![Apple Silicon](https://img.shields.io/badge/Apple%20Silicon-arm64-202c3a) ![SwiftUI](https://img.shields.io/badge/SwiftUI-native-0a9b80) ![Version](https://img.shields.io/badge/version-1.0.0-0a9b80)
 
-<img src="Assets/app-icon-512.png" alt="Inventory Intelligence CE application icon" width="112">
-
 Inventory Intelligence CE turns locally imported device inventory into lifecycle insights, replacement queues, and budget forecasts. **CE uses CSV files only**; it does not connect to Apple Business Manager, Jamf Pro, Intune, or other MDM services.
 
 ## Releases and development
