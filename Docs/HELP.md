@@ -39,6 +39,9 @@ Excel workbooks include Report Results, Full Inventory, Replacement Review, Data
 - **Unexpected counts**: check model-specific lifecycle settings and missing dates.
 - **No rows after filtering**: clear filters and search.
 
+### Application icon appears outdated
+The macOS build generates the application icon from the approved Revision 9 `Assets/AppIcon.iconset` using `iconutil`. If the previous icon persists after rebuilding, remove the older locally built application bundle, rebuild with `zsh scripts/build_on_mac.zsh`, and relaunch the newly generated app. Confirm that the icon generation step succeeds; macOS may cache an older Dock icon.
+
 ## Privacy and limitations
 CSV data stays on this Mac unless you manually export/share it. This release does not connect to Jamf, ABM, Intune, or any cloud service. It is distributed as source; locally compiled apps are unsigned unless signed separately.
 
