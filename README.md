@@ -25,20 +25,20 @@ The Stage 8 Increment 8 Community baseline remains unchanged. The 1.0.0 release 
 
 Inventory Intelligence CE uses a native macOS sidebar, consistent cards, status badges, searchable tables, and lifecycle planning views.
 
-**Screenshot gallery:** Add six PNG screenshots to [`Screenshots/`](Screenshots/README.md) using the filenames below. Once uploaded, remove the HTML comment markers surrounding the gallery to display the images in two columns. This prevents broken image links before screenshots are available.
+**Screenshot gallery:** Add six PNG screenshots to [`Docs/Assets/Screenshots/`](Docs/Assets/Screenshots/README.md) using the filenames below. Once uploaded, remove the HTML comment markers surrounding the gallery to display the images in two columns. This prevents broken image links before screenshots are available.
 
 <!-- SCREENSHOT GALLERY — remove this opening comment and the closing comment below once all six PNGs exist.
 | Dashboard | Serial Lookup |
 | :---: | :---: |
-| ![Dashboard](Screenshots/01-dashboard.png) | ![Serial Lookup](Screenshots/02-serial-lookup.png) |
+| ![Dashboard](Docs/Assets/Screenshots/01-dashboard.png) | ![Serial Lookup](Docs/Assets/Screenshots/02-serial-lookup.png) |
 
 | Inventory Reports | Lifecycle Analytics |
 | :---: | :---: |
-| ![Inventory Reports](Screenshots/03-inventory-reports.png) | ![Lifecycle Analytics](Screenshots/04-lifecycle-analytics.png) |
+| ![Inventory Reports](Docs/Assets/Screenshots/03-inventory-reports.png) | ![Lifecycle Analytics](Docs/Assets/Screenshots/04-lifecycle-analytics.png) |
 
 | Replacement Planning | Device Intelligence & Budget |
 | :---: | :---: |
-| ![Replacement Planning](Screenshots/05-replacement-planning.png) | ![Device Intelligence & Budget](Screenshots/06-device-intelligence-budget.png) |
+| ![Replacement Planning](Docs/Assets/Screenshots/05-replacement-planning.png) | ![Device Intelligence & Budget](Docs/Assets/Screenshots/06-device-intelligence-budget.png) |
 END SCREENSHOT GALLERY -->
 
 ## What it does
