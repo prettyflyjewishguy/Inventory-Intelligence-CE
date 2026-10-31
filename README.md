@@ -97,11 +97,9 @@ CE analyzes **CSV files you choose locally**. It does not authenticate to ABM or
 - [Contributing](CONTRIBUTING.md)
 - [Publication notice](Docs/PUBLICATION_NOTICE.md)
 
-## License and publication
+## License
 
-**No open-source license is granted with this source release candidate.** The rights to redistribute code and artwork, including the Enterprise icon, have not been established. See the [publication notice](Docs/PUBLICATION_NOTICE.md). Do not represent this package as MIT-licensed or publish it publicly without appropriate permission.
-
-Inventory Intelligence CE is not endorsed by Apple, Jamf, Microsoft, or other vendors.
+Released under the [MIT License](LICENSE). © 2026 Ethan Besbris.
 
 ## README in the app
 
